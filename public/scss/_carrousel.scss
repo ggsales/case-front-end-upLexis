@@ -1,0 +1,100 @@
+.carrousel{
+    & .box-slide{
+        background-image: url("../img/carrousel/img-slider-1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    & .box-slide_2{
+        background-image: url("../img/carrousel/img-slider-2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    & .box-slide_3{
+        background-image: url("../img/carrousel/img-slider-3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    & .box-slide, .box-slide_2, .box-slide_3{
+            height: 280px;
+            border-bottom: 5px solid #e16b39;
+            @media #{$xs}{
+                height: 450px;
+            }
+            & img{
+                max-width: 100%;
+            }
+
+        & .slider-text-title{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+
+            & h1{
+                font-size: 22px;
+                color: #fff;
+                font-family: $roboto;
+
+                & span{
+                    font-size: 5px;
+                }
+            }
+            & h2{
+                font-size: 25px;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: #fff;
+                font-family: $roboto;
+            }
+            & h3{
+                font-size: 22px;
+                color: #fff;
+                font-family: $roboto;
+            }
+        }
+
+
+        & .slider-text{
+            margin-top: 20px;
+            & p{
+                color: #fff;
+                font-size: 16px;
+                font-family: $roboto;
+            }
+        }
+
+        & .slider-prices{
+            display: flex;
+            justify-content: space-around;
+
+            & small{
+                color: #fff;
+                font-size: 15px;
+            }
+            & span{
+                color: #fff;
+                font-size: 25px;
+                font-weight: 700;
+            }
+
+            & button{
+                font-size: 15px;
+                color: #fff;
+                border-radius: 7px;
+                padding: 3px 20px;
+                background: linear-gradient(90deg,#f6864c,#e16b39);
+                box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.33);
+                transition: 0.8s linear;
+                &:hover{
+                    background: #dd5419e3;
+                    
+                }
+            }
+        }
+
+        
+        
+    }
+}

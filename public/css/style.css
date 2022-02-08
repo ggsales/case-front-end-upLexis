@@ -8078,4 +8078,76 @@ p {
 .pt-270 {
   padding-top: 270px; }
 
+.carrousel .box-slide {
+  background-image: url("../img/carrousel/img-slider-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.carrousel .box-slide_2 {
+  background-image: url("../img/carrousel/img-slider-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.carrousel .box-slide_3 {
+  background-image: url("../img/carrousel/img-slider-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.carrousel .box-slide, .carrousel .box-slide_2, .carrousel .box-slide_3 {
+  height: 280px;
+  border-bottom: 5px solid #e16b39; }
+  @media (max-width: 575px) {
+    .carrousel .box-slide, .carrousel .box-slide_2, .carrousel .box-slide_3 {
+      height: 450px; } }
+  .carrousel .box-slide img, .carrousel .box-slide_2 img, .carrousel .box-slide_3 img {
+    max-width: 100%; }
+  .carrousel .box-slide .slider-text-title, .carrousel .box-slide_2 .slider-text-title, .carrousel .box-slide_3 .slider-text-title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px; }
+    .carrousel .box-slide .slider-text-title h1, .carrousel .box-slide .slider-text-title .h1, .carrousel .box-slide_2 .slider-text-title h1, .carrousel .box-slide_2 .slider-text-title .h1, .carrousel .box-slide_3 .slider-text-title h1, .carrousel .box-slide_3 .slider-text-title .h1 {
+      font-size: 22px;
+      color: #fff;
+      font-family: "Roboto", sans-serif; }
+      .carrousel .box-slide .slider-text-title h1 span, .carrousel .box-slide .slider-text-title .h1 span, .carrousel .box-slide_2 .slider-text-title h1 span, .carrousel .box-slide_2 .slider-text-title .h1 span, .carrousel .box-slide_3 .slider-text-title h1 span, .carrousel .box-slide_3 .slider-text-title .h1 span {
+        font-size: 5px; }
+    .carrousel .box-slide .slider-text-title h2, .carrousel .box-slide .slider-text-title .h2, .carrousel .box-slide_2 .slider-text-title h2, .carrousel .box-slide_2 .slider-text-title .h2, .carrousel .box-slide_3 .slider-text-title h2, .carrousel .box-slide_3 .slider-text-title .h2 {
+      font-size: 25px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #fff;
+      font-family: "Roboto", sans-serif; }
+    .carrousel .box-slide .slider-text-title h3, .carrousel .box-slide .slider-text-title .h3, .carrousel .box-slide_2 .slider-text-title h3, .carrousel .box-slide_2 .slider-text-title .h3, .carrousel .box-slide_3 .slider-text-title h3, .carrousel .box-slide_3 .slider-text-title .h3 {
+      font-size: 22px;
+      color: #fff;
+      font-family: "Roboto", sans-serif; }
+  .carrousel .box-slide .slider-text, .carrousel .box-slide_2 .slider-text, .carrousel .box-slide_3 .slider-text {
+    margin-top: 20px; }
+    .carrousel .box-slide .slider-text p, .carrousel .box-slide_2 .slider-text p, .carrousel .box-slide_3 .slider-text p {
+      color: #fff;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif; }
+  .carrousel .box-slide .slider-prices, .carrousel .box-slide_2 .slider-prices, .carrousel .box-slide_3 .slider-prices {
+    display: flex;
+    justify-content: space-around; }
+    .carrousel .box-slide .slider-prices small, .carrousel .box-slide .slider-prices .small, .carrousel .box-slide_2 .slider-prices small, .carrousel .box-slide_2 .slider-prices .small, .carrousel .box-slide_3 .slider-prices small, .carrousel .box-slide_3 .slider-prices .small {
+      color: #fff;
+      font-size: 15px; }
+    .carrousel .box-slide .slider-prices span, .carrousel .box-slide_2 .slider-prices span, .carrousel .box-slide_3 .slider-prices span {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 700; }
+    .carrousel .box-slide .slider-prices button, .carrousel .box-slide_2 .slider-prices button, .carrousel .box-slide_3 .slider-prices button {
+      font-size: 15px;
+      color: #fff;
+      border-radius: 7px;
+      padding: 3px 20px;
+      background: linear-gradient(90deg, #f6864c, #e16b39);
+      box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.33);
+      transition: 0.8s linear; }
+      .carrousel .box-slide .slider-prices button:hover, .carrousel .box-slide_2 .slider-prices button:hover, .carrousel .box-slide_3 .slider-prices button:hover {
+        background: #dd5419e3; }
+
 /*# sourceMappingURL=style.css.map */
