@@ -1,0 +1,57 @@
+
+
+.cards-area{
+    & .btn-group-position{
+        display: flex;
+        justify-content: center;
+        @media #{$sm, $md, $xs}{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            
+        }
+    }
+    .phone-position{
+        @media #{$xs}{
+            width: 30%;
+            margin-top: 10px;
+            
+        }
+    }
+    & button{
+        width: 92px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: 600;
+        border-radius: 6px;
+        background: rgba(243, 238, 238, 0.544);
+        border: 1px solid grey;
+        transition: 0.4s ease-in;
+
+        &:hover{
+            background-color: rgb(231, 159, 52);
+        }
+        @media #{$xxl}{
+            width: 103px;
+        }
+        @media #{$lg}{
+            width: 70px;
+            font-size: 8px;
+        }
+        @media #{$sm, $md, xs}{
+            width: 70px;
+            margin-top: 7px;
+            font-size: 8px;
+        }
+    }
+    & i{
+        font-size: 18px;
+        padding: 5px 22px;
+        
+    }
+}

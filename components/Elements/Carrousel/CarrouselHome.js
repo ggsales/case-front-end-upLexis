@@ -12,7 +12,7 @@ export default function CarrouselHome(){
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
-        autoplay: false
+        autoplay: true
       };
 
     return(
@@ -37,7 +37,7 @@ export default function CarrouselHome(){
                                 <div className="row">
                                     <div className="col-lg-3 slider-prices">
                                         <span><small>R$</small>40,00</span>
-                                        <button>Saiba Mais</button>
+                                        <button>Saiba mais</button>
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +59,7 @@ export default function CarrouselHome(){
                                 <div className="row">
                                     <div className="col-lg-3 slider-prices">
                                         <span><small>R$</small>40,00</span>
-                                        <button>Saiba Mais</button>
+                                        <button>Saiba mais</button>
                                     </div>
                                 </div>
                             </div>
@@ -81,15 +81,13 @@ export default function CarrouselHome(){
                                 <div className="row">
                                     <div className="col-lg-3 slider-prices">
                                         <span><small>R$</small>40,00</span>
-                                        <button>Saiba Mais</button>
+                                        <button>Saiba mais</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </Slider>
-
                 </div>
-
             </section>
         </>
     )

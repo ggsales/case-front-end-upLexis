@@ -8150,4 +8150,51 @@ p {
       .carrousel .box-slide .slider-prices button:hover, .carrousel .box-slide_2 .slider-prices button:hover, .carrousel .box-slide_3 .slider-prices button:hover {
         background: #dd5419e3; }
 
+.cards-area .btn-group-position {
+  display: flex;
+  justify-content: center; }
+  @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
+    .cards-area .btn-group-position {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start; } }
+
+@media (max-width: 575px) {
+  .cards-area .phone-position {
+    width: 30%;
+    margin-top: 10px; } }
+
+.cards-area button {
+  width: 92px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 600;
+  border-radius: 6px;
+  background: rgba(243, 238, 238, 0.544);
+  border: 1px solid grey;
+  transition: 0.4s ease-in; }
+  .cards-area button:hover {
+    background-color: #e79f34; }
+  @media only screen and (min-width: 1400px) {
+    .cards-area button {
+      width: 103px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .cards-area button {
+      width: 70px;
+      font-size: 8px; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), xs {
+    .cards-area button {
+      width: 70px;
+      margin-top: 7px;
+      font-size: 8px; } }
+
+.cards-area i {
+  font-size: 18px;
+  padding: 5px 22px; }
+
 /*# sourceMappingURL=style.css.map */
