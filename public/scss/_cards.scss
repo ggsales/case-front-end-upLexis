@@ -18,6 +18,11 @@
             
         }
     }
+    & .active{
+       background: linear-gradient(90deg,#f6864c,#e16b39);
+       color: #fff;
+       transition: 0.3s linear;
+    }
     & button{
         width: 92px;
         height: 60px;
@@ -30,11 +35,11 @@
         font-weight: 600;
         border-radius: 6px;
         background: rgba(243, 238, 238, 0.544);
-        border: 1px solid grey;
-        transition: 0.4s ease-in;
+        box-shadow: 2px 6px 11px -13px #000000;
+        transition: 0.3s linear;
 
         &:hover{
-            background-color: rgb(231, 159, 52);
+            background-color: #dd5419e3
         }
         @media #{$xxl}{
             width: 103px;
@@ -48,10 +53,107 @@
             margin-top: 7px;
             font-size: 8px;
         }
+        
     }
     & i{
         font-size: 18px;
         padding: 5px 22px;
         
+    }
+}
+
+
+.card-box{
+    height: 340px;
+    margin-top: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.33);
+    position: relative;
+    padding: 20px;
+    @media #{$xl}{
+        height: 370px;
+    }
+    &:hover{
+        background: linear-gradient(90deg,#f6864c,#e16b39);
+        height: 350px;
+        transition: 0.5s linear;
+        @media #{$xl}{
+            height: 380px;
+        }
+        & .card-img{
+            & i{
+                color: #fff;
+            }
+        }
+        & .card-description{
+            & p{
+                color: #fff;
+            }
+        }
+        & .card-name{
+            & h2{
+                color: #fff;
+            }
+        }
+
+        & .card-price{
+            border-top: 2px solid #000;
+        }
+        
+    }
+
+
+    & .card-img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        & i{
+            font-size: 25px;
+            color: #e16b39;
+            text-align: center;
+        }
+    }
+    & .card-name{
+        & h2{
+            font-size: 17px;
+            font-family: $roboto;
+            color: #000;
+            font-weight: 400;
+        }
+    }
+
+    & .card-description{
+        & p{
+            font-size: 12px;
+            color: #000;
+            font-weight: 300;
+            text-align: center;
+            
+        }
+    }
+
+    & .card-price{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        position: absolute;
+        border-radius: 3px;
+        background:  linear-gradient(90deg,#f6864c,#e16b39);
+        bottom: 0;
+        padding-top: 5px;
+
+        & p, a{
+            color: #fff;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        & a:hover{
+            color: #000;
+            font-weight: 800;
+        }
     }
 }

@@ -8164,6 +8164,11 @@ p {
     width: 30%;
     margin-top: 10px; } }
 
+.cards-area .active {
+  background: linear-gradient(90deg, #f6864c, #e16b39);
+  color: #fff;
+  transition: 0.3s linear; }
+
 .cards-area button {
   width: 92px;
   height: 60px;
@@ -8176,10 +8181,10 @@ p {
   font-weight: 600;
   border-radius: 6px;
   background: rgba(243, 238, 238, 0.544);
-  border: 1px solid grey;
-  transition: 0.4s ease-in; }
+  box-shadow: 2px 6px 11px -13px #000000;
+  transition: 0.3s linear; }
   .cards-area button:hover {
-    background-color: #e79f34; }
+    background-color: #dd5419e3; }
   @media only screen and (min-width: 1400px) {
     .cards-area button {
       width: 103px; } }
@@ -8196,5 +8201,69 @@ p {
 .cards-area i {
   font-size: 18px;
   padding: 5px 22px; }
+
+.card-box {
+  height: 340px;
+  margin-top: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.33);
+  position: relative;
+  padding: 20px; }
+  @media only screen and (min-width: 1201px) and (max-width: 1399px) {
+    .card-box {
+      height: 370px; } }
+  .card-box:hover {
+    background: linear-gradient(90deg, #f6864c, #e16b39);
+    height: 350px;
+    transition: 0.5s linear; }
+    @media only screen and (min-width: 1201px) and (max-width: 1399px) {
+      .card-box:hover {
+        height: 380px; } }
+    .card-box:hover .card-img i {
+      color: #fff; }
+    .card-box:hover .card-description p {
+      color: #fff; }
+    .card-box:hover .card-name h2, .card-box:hover .card-name .h2 {
+      color: #fff; }
+    .card-box:hover .card-price {
+      border-top: 2px solid #000; }
+  .card-box .card-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px; }
+    .card-box .card-img i {
+      font-size: 25px;
+      color: #e16b39;
+      text-align: center; }
+  .card-box .card-name h2, .card-box .card-name .h2 {
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    font-weight: 400; }
+  .card-box .card-description p {
+    font-size: 12px;
+    color: #000;
+    font-weight: 300;
+    text-align: center; }
+  .card-box .card-price {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #f6864c, #e16b39);
+    bottom: 0;
+    padding-top: 5px; }
+    .card-box .card-price p, .card-box .card-price a {
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px; }
+    .card-box .card-price a:hover {
+      color: #000;
+      font-weight: 800; }
 
 /*# sourceMappingURL=style.css.map */
