@@ -111,7 +111,7 @@ export default function CardsArea(){
     <>
         <section className="cards-area">
             <div className="container">
-                <div className="row py-2 btn-group-position" >
+                <div className="row py-2 btn-group-position wow fadeInUp" data-wow-delay=".9s" >
                     <div className="col-xl-1 col-lg-1 col-md-2 col-sm-2 phone-position">
                         <button className={filter === "todos" ? "active" : ""} onClick={() => setFilter("todos")}><i className="far fa-globe"></i>Todos</button>
                     </div>
@@ -146,10 +146,25 @@ export default function CardsArea(){
             </div>
 
             <div className="container">
-                <div className="row grid">
+                <div className="row">
+                    <div className="col-lg-10 offset-lg-1 order-position wow fadeInUp" data-wow-delay="1.2s">
+                        <h3>Ordernar</h3>
+                        <select defaultValue="Lançamento">
+                            <option value="Lançamento">Lançamento</option>
+                            <option value="Preço">Preço</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div className="container">
+                <div className="row grid wow fadeInUp" data-wow-delay="1.5s">
                     {services.map((item, i) =>
                     item.filtered === true ? (
-                        <div className="col-xl-3 col-md-4 col-lg-4 col-sm-6 " key={i}>
+                        <div className="col-xl-3 col-md-4 col-lg-4 col-sm-6"  key={i}>
                             <div className="card-box">
                                 <div className="card-img">
                                     {item.Image}
