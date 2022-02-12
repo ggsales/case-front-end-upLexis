@@ -8145,7 +8145,7 @@ p {
       color: #fff;
       font-size: 25px;
       font-weight: 700; }
-    .carrousel .box-slide .slider-prices button, .carrousel .box-slide_2 .slider-prices button, .carrousel .box-slide_3 .slider-prices button {
+    .carrousel .box-slide .slider-prices a, .carrousel .box-slide_2 .slider-prices a, .carrousel .box-slide_3 .slider-prices a {
       font-size: 15px;
       color: #fff;
       border-radius: 7px;
@@ -8153,7 +8153,7 @@ p {
       background: linear-gradient(90deg, #f6864c, #e16b39);
       box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.33);
       transition: 0.8s linear; }
-      .carrousel .box-slide .slider-prices button:hover, .carrousel .box-slide_2 .slider-prices button:hover, .carrousel .box-slide_3 .slider-prices button:hover {
+      .carrousel .box-slide .slider-prices a:hover, .carrousel .box-slide_2 .slider-prices a:hover, .carrousel .box-slide_3 .slider-prices a:hover {
         background: #dd5419e3; }
 
 .cards-area .btn-group-position {
@@ -8226,7 +8226,7 @@ p {
     width: 180px;
     height: 25px;
     border: none;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.33);
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.15);
     margin-left: 20px;
     border-radius: 4px;
     font-size: 11px;
@@ -8241,7 +8241,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: -1px 2px 8px 2px rgba(0, 0, 0, 0.15);
   position: relative;
   padding: 20px; }
   @media only screen and (min-width: 1201px) and (max-width: 1399px) {
@@ -8285,7 +8285,7 @@ p {
     justify-content: space-around;
     width: 100%;
     position: absolute;
-    border-radius: 3px;
+    border-radius: 0px 0px 10px 10px;
     background: linear-gradient(90deg, #f6864c, #e16b39);
     bottom: 0;
     padding-top: 5px; }
@@ -8300,14 +8300,25 @@ p {
 .carrousel-contents .btn-back {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: flex-start;
   width: 100%;
-  margin-top: 40px; }
-  .carrousel-contents .btn-back h2, .carrousel-contents .btn-back .h2, .carrousel-contents .btn-back a {
+  margin-top: 40px;
+  padding-left: 5%; }
+  @media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+    .carrousel-contents .btn-back {
+      margin-bottom: 50px; } }
+  .carrousel-contents .btn-back h2, .carrousel-contents .btn-back .h2 {
     margin-left: 20px;
     font-size: 25px;
     color: #e16b39;
     font-weight: 700; }
+  .carrousel-contents .btn-back a {
+    font-size: 30px;
+    font-weight: 700;
+    color: #e16b39;
+    margin-top: 3px; }
+    .carrousel-contents .btn-back a:hover {
+      color: #eccf4e; }
 
 .carrousel-contents .slick-prev, .carrousel-contents .slick-next {
   background: none; }
@@ -8347,13 +8358,42 @@ p {
         padding: 0; } }
     .carrousel-contents .box-slide-details .img-box-wrapper p {
       margin-top: 20px;
-      color: #e16b39;
+      color: #db6f31;
       font-family: "Roboto", sans-serif;
-      font-weight: 700; }
+      font-weight: 400;
+      font-size: 18px; }
       @media (max-width: 575px) {
         .carrousel-contents .box-slide-details .img-box-wrapper p {
           font-size: 15px; } }
     .carrousel-contents .box-slide-details .img-box-wrapper img {
       width: 100%; }
+
+.carrousel-contents .description p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-weight: 200; }
+
+.carrousel-contents .price-position {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center; }
+  .carrousel-contents .price-position h3, .carrousel-contents .price-position .h3 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif; }
+  .carrousel-contents .price-position button {
+    margin-left: 25px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 35px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #f6864c, #e16b39);
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.33);
+    transition: 0.8s linear; }
+    .carrousel-contents .price-position button:hover {
+      background: #dd5419e3; }
 
 /*# sourceMappingURL=style.css.map */

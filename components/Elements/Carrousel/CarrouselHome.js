@@ -37,7 +37,7 @@ export default function CarrouselHome(){
                                 <div className="row">
                                     <div className="col-lg-3 slider-prices">
                                         <span><small>R$</small>40,00</span>
-                                        <button>Saiba mais</button>
+                                        <a href="/detalhes">Saiba mais</a>
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +59,7 @@ export default function CarrouselHome(){
                                 <div className="row">
                                     <div className="col-lg-3 slider-prices">
                                         <span><small>R$</small>40,00</span>
-                                        <button>Saiba mais</button>
+                                        <a href="/detalhes">Saiba mais</a>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ export default function CarrouselHome(){
                                 <div className="row">
                                     <div className="col-lg-3 slider-prices">
                                         <span><small>R$</small>40,00</span>
-                                        <button>Saiba mais</button>
+                                        <a href="/detalhes">Saiba mais</a>
                                     </div>
                                 </div>
                             </div>

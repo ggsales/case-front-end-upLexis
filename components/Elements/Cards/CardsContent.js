@@ -1,8 +1,6 @@
 
 
 
-
-export default function CardsContent(){
     const CardsContent = [
         {
             id:1,
@@ -28,7 +26,7 @@ export default function CardsContent(){
             name:"Sócio Ambiental",
             category: ["socio-ambiental", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 29,99"
+            price: "R$ 20,99"
         },
     
         {
@@ -37,7 +35,7 @@ export default function CardsContent(){
             name:"Jurídico",
             category: ["juridico", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 29,99"
+            price: "R$ 25,99"
         },
     
         {
@@ -46,7 +44,7 @@ export default function CardsContent(){
             name:"Listas Restritivas",
             category: ["listas-restritivas", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 29,99"
+            price: "R$ 59,99"
         },
     
         {
@@ -55,7 +53,7 @@ export default function CardsContent(){
             name:"Mídia / Internet",
             category: ["midia-internet", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 29,99"
+            price: "R$ 34,99"
         },
     
         {
@@ -64,7 +62,7 @@ export default function CardsContent(){
             name:"Bens e Imóveis",
             category: ["bens-imoveis", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 29,99"
+            price: "R$ 19,99"
         },
     
         {
@@ -73,7 +71,7 @@ export default function CardsContent(){
             name: "Cadastro",
             category: ["cadastro", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 29,99"
+            price: "R$ 49,99"
         },
     
         {
@@ -82,8 +80,8 @@ export default function CardsContent(){
             name:"Financeiro",
             category: ["financeiro", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 29,99"
+            price: "R$ 30,99"
         },
     
     ]
-}
+export default CardsContent;
