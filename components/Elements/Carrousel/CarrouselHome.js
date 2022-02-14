@@ -1,6 +1,7 @@
 
 
 import Slider from "react-slick";
+import CardsContent from "../Cards/CardsContent";
 
 
 export default function CarrouselHome(){
@@ -37,7 +38,7 @@ export default function CarrouselHome(){
                                 <div className="row">
                                     <div className="col-lg-3 slider-prices">
                                         <span><small>R$</small>40,00</span>
-                                        <a href="/detalhes">Saiba mais</a>
+                                        <a href="/detalhes/10">Saiba mais</a>
                                     </div>
                                 </div>
                             </div>
@@ -46,20 +47,20 @@ export default function CarrouselHome(){
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12 slider-text-title">
-                                        <h1>upMiner</h1>
+                                        <h1 >upMiner</h1>
                                         <h2>|</h2>
-                                        <h3>Histórico Empresarial</h3>
+                                        <h3 className="text-dark">Histórico Empresarial</h3>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-lg-6 slider-text">
-                                        <p>O aplicativo Histórico Empresarial permite ao usuário ter acesso a todos os fatos e acontecimentos relevantes de uma empresa desde o seu ano de fundação.</p>
+                                        <p className="text-dark">O aplicativo Histórico Empresarial permite ao usuário ter acesso a todos os fatos e acontecimentos relevantes de uma empresa desde o seu ano de fundação.</p>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-lg-3 slider-prices">
-                                        <span><small>R$</small>40,00</span>
-                                        <a href="/detalhes">Saiba mais</a>
+                                        <span className="text-dark"><small className="text-dark">R$</small>40,00</span>
+                                        <a href="/detalhes/10">Saiba mais</a>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +82,7 @@ export default function CarrouselHome(){
                                 <div className="row">
                                     <div className="col-lg-3 slider-prices">
                                         <span><small>R$</small>40,00</span>
-                                        <a href="/detalhes">Saiba mais</a>
+                                        <a href="/detalhes/10">Saiba mais</a>
                                     </div>
                                 </div>
                             </div>

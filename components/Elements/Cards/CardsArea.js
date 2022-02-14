@@ -3,29 +3,40 @@ import CardsContent from "./CardsContent";
 import { useRouter } from "next/router";
 
 
-
-
-
-
 export default function CardsArea(){
     const [filter, setFilter] = useState("todos");
     const [services, setServices] = useState([]);
+    const[order, setOrder] = useState("lancamento")
+
+
     useEffect(() => {
        setServices(CardsContent);
     }, []);
  
+    
     useEffect(() => {
-       setServices([]);
- 
-       const filtered = CardsContent.map((s) => ({
-          ...s,
-          filtered: s.category.includes(filter),
-       }));
-       setServices(filtered);
+        setServices([])
+           const filtered = CardsContent.map((s) => ({
+               ...s,
+               filtered: s.category.includes(filter),
+           }));
+           setServices(filtered);
     }, [filter]);
 
 
 
+   /*  function orderPrice(){
+        let pricesOrderData = CardsContent.sort((a,b) =>a.price - b.price) 
+       setFilter(pricesOrderData)
+    } 
+
+    const handleOption =(e)=> {
+        setOrder(e.target.value)
+      }
+
+      //ordenação 
+
+  */
 
 
     return(
@@ -34,7 +45,7 @@ export default function CardsArea(){
             <div className="container">
                 <div className="row py-2 btn-group-position wow fadeInUp" data-wow-delay=".9s" >
                     <div className="col-xl-1 col-lg-1 col-md-2 col-sm-2 phone-position">
-                        <button className={filter === "todos" ? "active" : ""} onClick={() => setFilter("todos")}><i className="far fa-globe"></i>Todos</button>
+                        <button className={filter === "todos"  ? "active" : ""} onClick={() => setFilter("todos")}><i className="far fa-globe"></i>Todos</button>
                     </div>
                     <div className="col-xl-1 col-lg-1 col-md-2 col-sm-2 phone-position">
                         <button className={filter === "profissional" ? "active" : ""} onClick={() => setFilter("profissional")}><i className="fas fa-briefcase"></i>Profissional</button>
@@ -68,11 +79,11 @@ export default function CardsArea(){
 
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-10 offset-lg-1 order-position wow fadeInUp" data-wow-delay="1.2s">
+                    <div className={`col-lg-10 offset-lg-1  wow fadeInUp ${filter === "todos" ? "order-position": "order-hide"}`} data-wow-delay="1.2s">
                         <h3>Ordernar</h3>
-                        <select defaultValue="Lançamento">
-                            <option value="Lançamento">Lançamento</option>
-                            <option value="Preço">Preço</option>
+                        <select  defaultValue="lancamento">
+                            <option  value="lancamento" >Lançamento</option>
+                            <option  value="preco" >Preço</option>
                         </select>
                         
                     </div>
@@ -83,7 +94,7 @@ export default function CardsArea(){
                 <div className="row grid wow fadeInLeft" data-wow-delay="1.8s">
                     {services.map((item, i) =>
                     item.filtered === true ? (
-                        <div className="col-xl-3 col-md-4 col-lg-4 col-sm-6"  key={i}>
+                        <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6"  key={i}>
                             <div className="card-box">
                                 <div className="card-img">
                                     {item.Image}
@@ -95,7 +106,7 @@ export default function CardsArea(){
                                     <p>{item.description}</p>
                                 </div>
                                 <div className="card-price">
-                                    <p>{item.price}</p>
+                                    <p>R${item.price}</p>
                                     <a href={`detalhes${"/"+ item.id}`}>Saiba mais</a>
                                   
                                 </div>
@@ -104,10 +115,8 @@ export default function CardsArea(){
                         ) : ('')
                     )}
                 </div>
-
             </div>
-         
-
+            
         </section>
     </>
     )

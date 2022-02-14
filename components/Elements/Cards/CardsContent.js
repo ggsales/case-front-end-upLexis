@@ -8,7 +8,7 @@
             name:"Profissional",
             category: ["profissional","todos"],
             description:"",
-            price: "R$ 29,99"
+            price: "29,99"
         },
     
         {
@@ -17,7 +17,7 @@
             name:"Reguladores",
             category: ["reguladores", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 29,99"
+            price:  "29,99"
         },
     
         {
@@ -26,7 +26,7 @@
             name:"Sócio Ambiental",
             category: ["socio-ambiental", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 20,99"
+            price: "20,99"
         },
     
         {
@@ -35,7 +35,7 @@
             name:"Jurídico",
             category: ["juridico", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 25,99"
+            price:  "25,99"
         },
     
         {
@@ -44,7 +44,7 @@
             name:"Listas Restritivas",
             category: ["listas-restritivas", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 59,99"
+            price:  "59,99"
         },
     
         {
@@ -53,7 +53,7 @@
             name:"Mídia / Internet",
             category: ["midia-internet", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 34,99"
+            price:  "34,99"
         },
     
         {
@@ -62,7 +62,7 @@
             name:"Bens e Imóveis",
             category: ["bens-imoveis", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 19,99"
+            price: "19,99"
         },
     
         {
@@ -71,7 +71,7 @@
             name: "Cadastro",
             category: ["cadastro", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 49,99"
+            price:  "49,99"
         },
     
         {
@@ -80,7 +80,16 @@
             name:"Financeiro",
             category: ["financeiro", "todos"],
             description:"O aplicativo balanço Patrimonial realiza a consulta de todos os balanços que são publicados nos Diários Oficiais de empresa S.A, de capital aberto e limitadas (LTDA) de grande porte.",
-            price: "R$ 30,99"
+            price: "30,99"
+        },
+
+        {
+            id:10,
+            Image: "",
+            name:"Histórico Empresarial",
+            category: "",
+            description:"O aplicativo Histórico Empresarial permite ao usuário ter acesso a todos os fatos e acontecimentos relevantes de uma empresa desde o seu ano de fundação.",
+            price: "40,99"
         },
     
     ]

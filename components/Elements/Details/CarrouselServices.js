@@ -51,10 +51,10 @@ export default function CarrouselContents(){
             {services.map((item, i) => url === id ?
             
             (
-            <div className="container">
+            <div className="container" key={i}>
                 <div className="row">
                     <div className="col-12 btn-back wow fadeInUp" data-wow-delay=".9s">
-                        <a href="/"> {"<"} </a>
+                        <a  className="fas fa-angle-left" href="/"></a>
                         <h2>{item.name}</h2>
                     </div>
                     <div className="container wow fadeInUp" data-wow-delay="1.5s">
@@ -104,13 +104,13 @@ export default function CarrouselContents(){
                 </div>
             </div>
             <div className="row wow fadeInUp" data-wow-delay="1.5s">
-                <div className="col-12 description">
+                <div className="col-12  description">
                     <p>{item.description}</p>
                 </div>
             </div>
             <div className="row  wow fadeInLeft" data-wow-delay="1.0s">
                 <div className="col-12 price-position">
-                    <h3>{item.price}</h3>
+                    <h3><small>R$</small>{item.price}</h3>
                     <button>Habilitar</button>
                 </div>
             </div>

@@ -8233,6 +8233,9 @@ p {
     font-family: "Roboto", sans-serif;
     padding-left: 5px; }
 
+.order-hide {
+  display: none; }
+
 .card-box {
   height: 340px;
   margin-top: 30px;
@@ -8355,7 +8358,7 @@ p {
       .carrousel-contents .box-slide-details .img-box-wrapper {
         width: 100%;
         margin: 0;
-        padding: 0; } }
+        padding: 10px; } }
     .carrousel-contents .box-slide-details .img-box-wrapper p {
       margin-top: 20px;
       color: #db6f31;
@@ -8372,23 +8375,42 @@ p {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   color: #000;
-  font-weight: 200; }
+  font-weight: 200;
+  margin-left: 30px;
+  padding-right: 50px;
+  margin-bottom: 30px; }
+  @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+    .carrousel-contents .description p {
+      margin-left: 10px;
+      padding: 0; } }
 
 .carrousel-contents .price-position {
   display: flex;
   width: 100%;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  margin-left: 30px; }
+  @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+    .carrousel-contents .price-position {
+      margin-left: 10px;
+      justify-content: center; } }
   .carrousel-contents .price-position h3, .carrousel-contents .price-position .h3 {
     font-size: 35px;
     font-weight: 700;
     font-family: "Roboto", sans-serif; }
+    @media (max-width: 575px) {
+      .carrousel-contents .price-position h3, .carrousel-contents .price-position .h3 {
+        font-size: 30px; } }
+    .carrousel-contents .price-position h3 small, .carrousel-contents .price-position .h3 small, .carrousel-contents .price-position h3 .small, .carrousel-contents .price-position .h3 .small {
+      font-size: 18px; }
   .carrousel-contents .price-position button {
     margin-left: 25px;
     font-size: 15px;
     color: #fff;
     border-radius: 7px;
     padding: 5px 35px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     background: linear-gradient(90deg, #f6864c, #e16b39);
     box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.33);

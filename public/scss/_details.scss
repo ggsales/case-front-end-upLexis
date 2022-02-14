@@ -70,7 +70,7 @@
             @media #{$xs, $sm, $md}{
                 width: 100%;
                 margin: 0;
-                padding: 0;
+                padding: 10px;
             }
             
             
@@ -103,6 +103,13 @@
             font-family: $roboto;
             color: #000;
             font-weight: 200;
+            margin-left: 30px;
+            padding-right: 50px;
+            margin-bottom: 30px;
+            @media #{$xs, $sm, $md}{
+                margin-left: 10px;
+                padding: 0;
+            }
         }
     }
 
@@ -111,11 +118,26 @@
         width: 100%;
         flex-direction: row;
         align-items: center;
+        margin-left: 30px;
+        @media #{$xs, $sm, $md}{
+            margin-left: 10px;
+            justify-content: center;
+
+        }
+        
 
         & h3{
             font-size: 35px;
             font-weight: 700;
             font-family: $roboto;
+            @media #{$xs}{
+                font-size: 30px;
+                
+            }
+
+            & small{
+                font-size: 18px;
+            }
         }
         & button{
                 margin-left: 25px;
@@ -124,9 +146,12 @@
                 border-radius: 7px;
                 padding: 5px 35px;
                 font-weight: 700;
+                font-family: $roboto;
+                font-weight: 700;
                 background: linear-gradient(90deg,#f6864c,#e16b39);
                 box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.33);
                 transition: 0.8s linear;
+                
                 &:hover{
                     background: #dd5419e3;
                     
