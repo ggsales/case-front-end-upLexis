@@ -80,7 +80,7 @@ export default function CardsArea(){
             <div className="container">
                 <div className="row">
                     <div className={`col-lg-10 offset-lg-1  wow fadeInUp ${filter === "todos" ? "order-position": "order-hide"}`} data-wow-delay="1.2s">
-                        <h3>Ordernar</h3>
+                        <h3>Ordenar</h3>
                         <select  defaultValue="lancamento">
                             <option  value="lancamento" >Lançamento</option>
                             <option  value="preco" >Preço</option>
