@@ -2,7 +2,7 @@
   <h2>Case Front-end upLexis</h2>
 </div>
 
-### [Clique aqui para acompanhar a versão final do projeto.](https://case-front-end-up-lexis.vercel.app/)
+### [Clique aqui para acompanhar a versão final do projeto.](https://case-front-end-up-lexis-pu1itli0d-ggsales.vercel.app/)
 
 <h1>Para iniciar:</h1>
 <ul>
